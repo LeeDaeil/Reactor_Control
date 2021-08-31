@@ -1,7 +1,7 @@
 # Reactor_Control
-원자로 제어 Simulation
+Reactor power control Simulation
 
-![up]{https://github.com/LeeDaeil/Reactor_Control/blob/main/power.png}
+![up](https://github.com/LeeDaeil/Reactor_Control/blob/main/power.png?raw=true)
 
 
 # Reference

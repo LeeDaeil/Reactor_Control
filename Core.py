@@ -49,6 +49,8 @@ r.set_initial_value(x0, t0)
 
 power_list = []
 dt = 1
+
+# PID Controller
 Kp, Ki, Kd = 0.002, 0.0003, 0.0001
 err, err1, err2 = 0, 0, 0
 
