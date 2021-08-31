@@ -53,7 +53,6 @@ Kp, Ki, Kd = 0.002, 0.0003, 0.0001
 err, err1, err2 = 0, 0, 0
 
 for t in range(len(set_y)):
-    print(f'{t} ============================= ')
     o = r.integrate([t, t+dt])
     err2 = err1
     err1 = err
@@ -61,11 +60,9 @@ for t in range(len(set_y)):
     DeltaKcr = DeltaKcr + Kp * (err - err1) + Ki * err + Kd *((err - err1) - (err1 - err2))
     power_list.append(o[0])
 
-    if t > 2:
-        break
-
 plt.plot(power_list, 'black')
 plt.plot(set_y)
+plt.savefig('power.png', dpi=600)
 plt.show()
 
 
